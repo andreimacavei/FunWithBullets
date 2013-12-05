@@ -5,6 +5,14 @@ import Screen.Screen;
 import Shapes.Point;
 import Shapes.SquareShape;
 
+/**
+ * The class for the projectile type "carcass". This projectile
+ * can change its shape transforming into "heatedshot".
+ * Represented on the screen by a "square" shape.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class Carcass extends HeatedShot {
 
 	private final int id = 2;

@@ -41,9 +41,9 @@ public abstract class Projectile {
 	protected abstract void hitScreenAction(Point shooterPosition, int ref);
 	
 	/**
-	 * Setter for ref
+	 * Sets a new ref value for this projectile
 	 * 
-	 * @param ref reference distance
+	 * @param ref ref value
 	 */
 	protected void setRef(int ref) {
 		this.ref = ref;

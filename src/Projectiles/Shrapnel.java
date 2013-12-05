@@ -5,6 +5,14 @@ import Screen.Screen;
 import Shapes.Point;
 import Shapes.SquareShape;
 
+/**
+ * The class for the projectile type "shrapnel". This projectile
+ * can change its shape transforming into "spidershot".
+ * Represented on the screen by a "square" shape.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class Shrapnel extends SpiderShot {
 
 	private final int id = 5;

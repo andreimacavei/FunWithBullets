@@ -3,6 +3,14 @@ package Shapes;
 import Constants.Symbols;
 import Screen.Screen;
 
+/**
+ * The class for drawing a rhombus shape on the screen.
+ * The rhombus is drawn using the position for the center of gravity
+ * of the shape, a ref value and the character 'R'.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class RhombusShape extends BasicShape {
 
 	public RhombusShape() {

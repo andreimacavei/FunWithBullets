@@ -5,6 +5,14 @@ import Screen.Screen;
 import Shapes.Point;
 import Shapes.RhombusShape;
 
+/**
+ * The class for the projectile type "heatedshot". This projectile
+ * can change its shape transforming into "spidershot".
+ * Represented on the screen by a "rhombus" shape.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class HeatedShot extends SpiderShot {
 
 	private final int id = 6;

@@ -3,6 +3,14 @@ package Shapes;
 import Constants.Symbols;
 import Screen.Screen;
 
+/**
+ * The class for drawing a triangle shape on the screen.
+ * The triangle is drawn using the position for the center of gravity
+ * of the shape, a ref value and the character 'T'.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class TriangleShape extends BasicShape {
 
 	public TriangleShape() {

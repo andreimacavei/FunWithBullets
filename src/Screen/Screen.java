@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import Shapes.Point;
+import Constants.Symbols;
 import ProcessingManagers.DrawManager;
 
 /**
@@ -22,7 +23,7 @@ public class Screen {
 		this.matrix = new char[sizeX][sizeY];
 		for (int i = 0; i < sizeX; ++i) {
 			for (int j = 0; j < sizeY; ++j) {
-				matrix[i][j] = '.';
+				matrix[i][j] = Symbols.SCREEN_SYMBOL;
 			}
 		}
 	}
@@ -58,7 +59,8 @@ public class Screen {
 	}
 	
 	/**
-	 * Writes the screen to a given file.
+	 * Writes this screen, represented by a matrix of characters,
+	 * to a given file.
 	 * 
 	 * @param out	the output file
 	 */

@@ -3,6 +3,14 @@ package Shapes;
 import Constants.Symbols;
 import Screen.Screen;
 
+/**
+ * The class for drawing a square shape on the screen.
+ * The square is drawn using the position for the center of gravity
+ * of the shape, a ref value and the character 'S'.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class SquareShape extends BasicShape {
 
 	

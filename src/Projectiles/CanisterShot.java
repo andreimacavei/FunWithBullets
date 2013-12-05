@@ -5,6 +5,14 @@ import Screen.Screen;
 import Shapes.Point;
 import Shapes.RectangleShape;
 
+/**
+ * The class for the projectile type "canistershot". This projectile
+ * can change its shape transforming into "heatedshot".
+ * Represented on the screen by a "rectangle" shape.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class CanisterShot extends HeatedShot {
 
 	private final int id = 3;

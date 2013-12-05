@@ -5,12 +5,14 @@ package ProcessingManagers;
  */
 public class TimeManager {
 	private int h,m,s;
-
-	// TODO => implement the body of the class (set class fields, make ways 
-	// 			for other classes to work with a TimeManager object)
+	
+	/**
+	 * Constructs a time object from the given string
+	 * 
+	 * @param time  a string representing the time in hh:mm:ss format
+	 */
 	public TimeManager(String time) {
 		String[] timePieces = time.split(":");
-		// TODO => check if the input is correct
 		this.h = Integer.parseInt(timePieces[0]);
 		this.m = Integer.parseInt(timePieces[1]);
 		this.s = Integer.parseInt(timePieces[2]);

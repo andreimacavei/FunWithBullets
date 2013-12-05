@@ -5,6 +5,14 @@ import Screen.Screen;
 import Shapes.DotShape;
 import Shapes.Point;
 
+/**
+ * The class for the projectile type "simpleshell". This projectile
+ * doesn't change from depending on the distance it travels.
+ * Represented on the screen by character 'P'.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class SimpleShell extends Projectile {
 	
 	private final int id = 8;

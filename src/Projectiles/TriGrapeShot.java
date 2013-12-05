@@ -5,6 +5,14 @@ import Screen.Screen;
 import Shapes.Point;
 import Shapes.TriangleShape;
 
+/**
+ * The class for the projectile type "trigrapeshot". This projectile
+ * can change its shape transforming into "shrapnel".
+ * Represented on the screen by a "triangle" shape.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class TriGrapeShot extends Shrapnel {
 
 	private final int id = 1;

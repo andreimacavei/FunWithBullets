@@ -5,6 +5,14 @@ import Screen.Screen;
 import Shapes.Point;
 import Shapes.RectangleShape;
 
+/**
+ * The class for the projectile type "spidershot". This projectile
+ * can change its shape transforming into "simpleshell".
+ * Represented on the screen by a "rectangle" shape.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class SpiderShot extends SimpleShell {
 	
 	private final int id = 7;

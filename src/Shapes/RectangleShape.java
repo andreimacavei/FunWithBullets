@@ -3,10 +3,17 @@ package Shapes;
 import Constants.Symbols;
 import Screen.Screen;
 
+/**
+ * The class for drawing a rectangle shape on the screen.
+ * The rectangle is drawn using the position for the center of gravity
+ * of the shape, a ref value and the character 'D'.
+ * 
+ * @author Macavei Andrei-Gabriel
+ *
+ */
 public class RectangleShape extends BasicShape {
 
 	public RectangleShape() {
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

@@ -20,6 +20,12 @@ import Shapes.Point;
 
 public class Main {
 
+	/**
+	 * Execution entry point.
+	 * 
+	 * @param args one string representing the name of the input file
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader in = null;
@@ -36,15 +42,16 @@ public class Main {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		// Getting the screen coordinates
+		// Parsing the screen dimensions: sizex sizey
 		String line = in.readLine();
 		String[] lineAtoms = line.split(" ");
-		int ex = Integer.parseInt(lineAtoms[0]);
-		int ey = Integer.parseInt(lineAtoms[1]);
-		Screen scr = new Screen(ex, ey);
+		int sizex = Integer.parseInt(lineAtoms[0]);
+		int sizey = Integer.parseInt(lineAtoms[1]);
+		Screen scr = new Screen(sizex, sizey);
 		
 		final int N = Integer.parseInt(in.readLine());
-		// Parsing N lines
+		// Parsing N lines with format : 
+		// projectile_name ref_value hh:mm:ss dist_to_screen x_pos y_pos 
 		while((line = in.readLine()) != null) {
 			String[] tokens = line.split(" ");
 			
@@ -57,7 +64,7 @@ public class Main {
 			int posx = Integer.parseInt(tokens[4]);
 			int posy = Integer.parseInt(tokens[5]);
 			Point shooterPosition = new Point(posx, posy);
-			
+			// Call the right method for this projectile type
 			shootProjectile(projectileName, scr, ref, currentTime, dist, shooterPosition);
 			
 		}
@@ -72,10 +79,22 @@ public class Main {
 		try {
 			out.close();
 		} catch (IOException e) {
-			System.out.println("Error closing file " + args[1]);
+			System.out.println("Error closing file " + args[0] + "_out");
 		}
 	}
 	
+	/**
+	 * This method creates and shootsthe right Projectile to the Screen.
+	 * 
+	 * 
+	 * @param projectileName  the type of the projectile read from file.
+	 * @param screen  the Screen object to which the projectile is shot
+	 * @param ref  the ref value choosen for this projectile shape
+	 * @param currentTime  the TimeManager object for the initial time
+	 * @param dist  the distance from the shooter to the screen
+	 * @param shooterPosition  the position from which the projectile is 
+	 * 		  shot, in x and y coordinates of the screen
+	 */
 	public static void shootProjectile(String projectileName,
 			Screen screen, int ref, TimeManager currentTime,
 			int dist, Point shooterPosition) {
@@ -113,7 +132,6 @@ public class Main {
 			
 		} else {
 			System.out.println("Undefined projectile type");
-			return;
 		}
 	}
 }
