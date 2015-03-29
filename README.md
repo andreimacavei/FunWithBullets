@@ -5,31 +5,31 @@ I won't detail too much , however [here](http://elf.cs.pub.ro/poo/teme/tema2) is
 Projectile<br>
 	|<br>
 SimpleShell<br>
-	|
-SpiderShot 
-	|
-	|
-	|\
-	| \
-	|  \
-	|   \
-	|    \
-	|     \
-	|   Shrapnell
-	|		|\
-	|       | \
-	|       |  \
-	|       |   \
-	|		|  TriGrapeShot
-	|		|
-	|	ChainShot
-	|
-HeatedShot
-	|
-	|\
-	| \
-	|  \
-	|   \
-	|   Carcass
-CanisterShot
+	|<br>
+SpiderShot <br>
+	|<br>
+	|<br>
+	|\<br>
+	| \<br>
+	|  \<br>
+	|   \<br>
+	|    \<br>
+	|     \<br>
+	|   Shrapnell<br>
+	|		|\<br>
+	|       | \<br>
+	|       |  \<br>
+	|       |   \<br>
+	|		|  TriGrapeShot<br>
+	|		|<br>
+	|	ChainShot<br>
+	|<br>
+HeatedShot<br>
+	|<br>
+	|\<br>
+	| \<br>
+	|  \<br>
+	|   \<br>
+	|   Carcass<br>
+CanisterShot<br>
 
